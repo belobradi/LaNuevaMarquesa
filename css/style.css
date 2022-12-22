@@ -2,11 +2,15 @@
     --max-width: 800px;
 }
 
+html,
+body {
+    color: #f4f4f4;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    color: #f4f4f4;
     box-sizing: border-box;
 }
 
@@ -62,10 +66,48 @@
     border: solid 2px #f4f4f4;
     width: 9rem;
     text-decoration: none;
-    margin: 0 0.3rem;
+    margin: 0 0.5rem;
     transition: background 0.2s ease-in;
 }
 
 .btn:hover {
     background: #4d4d4d;
+}
+
+.flex-split {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.flex-split .menu-content {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0 0 2rem;
+    line-height: 1.8;
+}
+
+#menu-right img {
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: 32%;
+    height: auto;
+    z-index: -1;
+}
+
+.flex-split .menu-content > h2 {
+    margin-top: 1.8rem;
+}
+
+.menu-bg {
+    background: url(/img/menu.jpg) center center/cover no-repeat;
+    color: #f4f4f4;
+}
+
+.menu-light {
+    color: #000;
 }
