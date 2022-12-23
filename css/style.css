@@ -83,7 +83,7 @@ a {
 .flex-split {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .flex-split .menu-content {
@@ -107,11 +107,16 @@ a {
 
 .flex-split .menu-content > h2 {
     margin-top: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .menu-bg {
     background: url(/img/menu.jpg) center center/cover no-repeat;
     color: #f4f4f4;
+}
+
+.reservation-bg {
+    background: url(/img/reservation.jpg) center center/cover no-repeat;
 }
 
 .menu-light {
@@ -156,4 +161,46 @@ a {
 .navbar > div > a:hover:after {
     background: #333;
     width: 100%;
+}
+
+.reservation-form {
+    margin-top: 2rem;
+    width: 95%;
+}
+
+.reservation-form .fformat {
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    margin: 0.6rem 0;
+}
+
+.reservation-form > input {
+    width: 100%;
+}
+
+.reservation-form > div > .left {
+    float: left;
+    width: 49%;
+}
+.reservation-form > div > .right {
+    float: right;
+    width: 49%;
+}
+
+.btn3 {
+    height: 3rem;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: #412E22;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.btn3:hover {
+    opacity: 0.8;
 }
