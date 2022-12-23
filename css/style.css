@@ -7,6 +7,10 @@ body {
     color: #f4f4f4;
 }
 
+a {
+    text-decoration: none;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -21,9 +25,10 @@ body {
     z-index: 1;
 }
 
-.logo > h1 {
+.logo > a > h1 {
     padding: 2.5rem 0 0 2rem;
     font-size: 2.5rem;
+    color: #f4f4f4;
 }
 
 .showcase {
@@ -67,6 +72,7 @@ body {
     width: 9rem;
     text-decoration: none;
     margin: 0 0.5rem;
+    color: #f4f4f4;
     transition: background 0.2s ease-in;
 }
 
@@ -110,4 +116,44 @@ body {
 
 .menu-light {
     color: #000;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2.5rem 2rem 0 0;
+}
+
+.btn {
+    padding: 0.6rem 0;
+    border: solid 2px #f4f4f4;
+    width: 9rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: #f4f4f4;
+    transition: background 0.2s ease-in;
+}
+
+.btn2 {
+    padding: 0.2rem 0.6rem;
+    text-decoration: none;
+    margin: 0 0.6rem;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navbar > div > a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    transition: all 0.3s ease-in;
+}
+
+.navbar > div > a:hover:after {
+    background: #333;
+    width: 100%;
 }
