@@ -31,6 +31,10 @@ a {
     color: #f4f4f4;
 }
 
+.logo-dark > a > h1 {
+    color: #333;
+}
+
 .showcase {
     background: url(/img/showcase.jpg) center center/cover no-repeat;
     width: 100vw;
@@ -95,7 +99,7 @@ a {
     line-height: 1.8;
 }
 
-#menu-right img {
+#right-side .plate-img {
     display: block;
     position: absolute;
     bottom: 0rem;
@@ -204,3 +208,51 @@ a {
 .btn3:hover {
     opacity: 0.8;
 }
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.map {
+    filter: grayscale(85%);
+    border:0;
+}
+
+#contact .menu-content {
+    padding-left: 0;
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-grid .row {
+    display: flex;
+}
+
+.flex-grid .row > img {
+    padding: 1rem 0;
+}
+
+.flex-grid .row > p {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-contact {
+    padding: 5rem;
+}
+
+.reviews {
+    position: absolute;
+    bottom: 0;
+    padding: 5rem;
+}
+
+.reviews h2 {
+    padding-bottom: 1rem;
+}
+
