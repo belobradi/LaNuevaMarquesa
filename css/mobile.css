@@ -1,0 +1,48 @@
+@media screen and (max-width: 720px) {
+    
+    .flex-grid-index {
+        flex-direction: column;
+    }
+    .flex-grid-index .btn {
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .flex-split {
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .menu-background {
+        display: none;
+    }
+    .reservation-background {
+        display: none;
+    }
+    .menu-background-body {
+        background: url(/img/menu.jpg) center center/cover no-repeat;
+        min-height: 100vh;
+    }
+    .reservation-background-body {
+        background: url(/img/reservation.jpg) center center/cover no-repeat;
+        min-height: 100vh;
+    }
+    .plate-img {
+        display: none;
+    }
+    .menu-light {
+        color: #f4f4f4;
+    }
+    .btn2 {
+        color: #f4f4f4;
+    }
+    #header .btn2:hover:after {
+        background: #f4f4f4;
+    }
+}

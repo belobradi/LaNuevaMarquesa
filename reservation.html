@@ -5,38 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <title>LaNuevaMarquesa | Reservation</title>
 </head>
-<body>
-    <header class="logo">
-        <a href="index.html"><h1>LaNuevaMarquesa</h1></a>
-    </header>
-    <nav class="navbar">
-        <div class="flex-row">
+<body class="reservation-background-body">
+    <header id="header" class="flex-split">
+        <a class="logo" href="index.html"><h1>LaNuevaMarquesa</h1></a>
+        <div class="flex-grid">
             <a class="btn2" href="menu.html">Menu</a>
             <a class="btn2" href="reservation.html">Reservation</a>
             <a class="btn2" href="gallery.html">Gallery</a>
             <a class="btn2" href="contact.html">Contact</a>
         </div>
-    </nav>
-    <main class="flex-split">
-        <section id="left-side" class="menu-content reservation-bg"></section>
-        <section id="right-side" class="menu-content menu-light">
-            <h2>BEST IN BARCELONA</h2>
-            <p>
-                Since the beginning of our restaurant, we prepared only traditional food with fresh ingredients. Through the years, we opened our doors to many people, with a single goal of giving them unique experience. We are really proud of our food, wine, and the comfort that we can offer you. Feel free to come and visit us. 
-            </p>
-            <form class="reservation-form" action="">
-                <input class="fformat" type="text" placeholder="Name and Surrname">
-                <input class="fformat" type="text" placeholder="Phone number">
-                <input class="fformat" type="email" placeholder="Email">
-                <div>
-                    <input class="fformat left" type="number" placeholder="Number of people">
-                    <input class="fformat right" type="datetime-local" placeholder="Time">
-                </div>
-                <button class="btn3">Make a reservation</button>
-            </form>
-        </section>
+    </header>
+    <main id="reservation">
+        <div class="flex-split">
+            <section id="left-side">
+                <div class="reservation-background"></div>
+            </section>
+            <section id="right-side" class="menu-content menu-light">
+                <h2>BEST IN BARCELONA</h2>
+                <p>
+                    Since the beginning of our restaurant, we prepared only traditional food with fresh ingredients. Through the years, we opened our doors to many people, with a single goal of giving them unique experience. We are really proud of our food, wine, and the comfort that we can offer you. Feel free to come and visit us. 
+                </p>
+                <form class="reservation-form" action="">
+                    <input class="fformat" type="text" placeholder="Name and Surrname">
+                    <input class="fformat" type="text" placeholder="Phone number">
+                    <input class="fformat" type="email" placeholder="Email">
+                    <div>
+                        <input class="fformat left" type="number" placeholder="Number of people">
+                        <input class="fformat right" type="datetime-local" placeholder="Time">
+                    </div>
+                    <button class="btn3">Make a reservation</button>
+                </form>
+            </section>
+        </div>
     </main>
 </body>
 </html>
