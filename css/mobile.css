@@ -45,4 +45,7 @@
     #header .btn2:hover:after {
         background: #f4f4f4;
     }
+    .map {
+        display: none;
+    }
 }
