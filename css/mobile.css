@@ -1,3 +1,18 @@
+@media screen and (max-width: 500px) {
+    .btn2 {
+        padding: 0.1rem 0.2rem;
+        margin: 0;
+    }
+    body {
+        font-size: 14px;
+    }
+
+    .logo > h1 {
+        padding: 1rem;
+        font-size: 1.9rem;
+    }
+}
+
 @media screen and (max-width: 720px) {
     
     .flex-grid-index {
@@ -6,6 +21,12 @@
     .flex-grid-index .btn {
         width: 100%;
         padding: 1.5rem;
+    }
+    .reviews > .flex-grid {
+        flex-direction: column;
+    }
+    .reviews > .flex-grid > div {
+        padding: 1rem 0;
     }
 }
 
